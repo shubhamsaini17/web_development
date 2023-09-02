@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* create a root element isma jo ha wo har jaga use kar sakta ha css ma */
+    /* agar custom variable ko root k andar create kra ga to sara elements access or use kar saktaha ha ina */
+    :root{
+        --primary-color: brown; 
+        /* inko custom variable bolta ha or ina asa he create karta ha */
+        /*  in dono ka use kar saktan ha ham agar hamana bohat sari jaga CSS ma same  colour , width use karni ha to */
+        --custom-width: 330px;
+        box-shadow: 10px 15px black, 20px 20px var(--primary-color);
+    /* use karna k syntax above  var(--primary-color) or var(--custom-width); */
+    }
+    .container{
+        background-color: #00ff73;
+        height: 680px;
+        border: 2px solid black;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .box{
+        width: 530px;
+        background-color: #04bbf3;
+        height: 330px;
+        border: 1px solid brown;
+        margin: 5px;
+        padding: 5px;
+        /* box-shadow: 10px 10px black; */
+     /* box-shadow: x axis ka offset , y axis ka offset , color; */
+     
+     /* box-shadow: 10px 10px 10px black; */
+     /* 3rd 10px for blur */
+
+     /* box-shadow: 10px 15px 10px 20px black; */
+        /* spread radious 20px {sahdow kitni spreed hogi} */
+
+       /* box-shadow: inset 10px 15px 10px 20px black; */
+       /* inset likna se shadow box k ander ki taraf aya ge */
+        
+       box-shadow: 10px 15px black, 20px 20px red;
+       /* different colour ki 2 shadow add karni ho to*/
+    }
+    img{
+        width: 200px;
+    }
+
+    #head1{
+        /* text-shadow: 5px 3px 1px black; */
+        /* text-shadow: x-axis offset, y-axis offset, spread radious black; */
+/* 
+        text-shadow: orange 2px 3px 1px; */
+        /* text-shadow: white 5px 3px; */
+
+        text-shadow: 2px 12px brown, 12px 2px orchid;
+    }
+
+</style>
+<body>
+    
+<div class="container">
+
+    <div class="box">
+        <img src="developer.png" alt="developer">
+        <h2>developer</h2>
+        <h1 id="head1">hello good morning</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa nostrum beatae quos unde sed totam fugit nisi nihil laudantium harum eius modi, aspernatur aliquid velit, necessitatibus error ullam expedita minima.</p>
+        <br>
+        
+    </div>
+
+</div>
+
+</body>
+</html>

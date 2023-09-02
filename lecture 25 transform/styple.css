@@ -1,0 +1,36 @@
+.container{
+    height: 100vh;
+    width: 100vw;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    width: 400px;
+    height: 400px;
+    background-color: #dc0808;
+    border: 2px solid black;
+    margin: auto;
+    transition: all 3s ;
+    /* transition help to run transformation, to  set delay */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translate(30px, 20px) rotate(20deg);
+    transition: margin-right 2s .5s;
+    
+}  
+.box:hover{
+    transform: rotate(45deg);
+    transform: scale(2);
+    transform: scale(0.2);
+    transform: skew(-450deg);
+    transform: translate(500px ,-100px );
+    /*                    x axis kis direction ma 500 px move kro, y axis ma -100 move*/
+    transform: matrix(0.866,0.7,-0.8,0.866,0,0);
+    transform: translate(30px, 20px) rotate(20deg);
+}
+    p{
+    font-size: 36px;
+} 

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form >    
+<h1>Job Application</h1>
+
+<label for="name">Name</label>
+<input type="text" id="name" placeholder="username">
+<br/><br/>
+
+<label for="email">Email</label>
+<input type="email" id="email" placeholder="123@exmaple.com">
+<br/><br/>
+
+<label for="phone">Phone</label>
+<input type="tel" id="phone" placeholder="phone number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+>
+<br/><br/>
+
+<label for="resume">Resume</label>
+<input type="file" name="uploadfile" id="resume">
+
+<br/>
+<br/>
+<label for="Experence">Experence(in years)</label>
+<br/><br/>
+<input type="number" name="number" id="Experence" min="0" max="50">
+<br/><br/>
+<fieldset>
+    <legend>Skills</legend>
+
+<br/>
+
+
+
+<input type="checkbox" name="html" id="html">
+<label for="html">HTML</label>
+<br/>
+<input type="checkbox" name="CSS" id="CSS">
+<label for="CSS">CSS</label>
+<br/>
+<input type="checkbox" name="JAVASCRIPT" id="JAVASCRIPT">
+<label for="JAVASCRIPT">JAVASCRIPT</label>
+</fieldset>
+<br/><br/>
+
+<label for="higest_edu">Highest eduction</label>
+<br/><br/>
+
+<select name="higest_edu" id="higest_edu">
+<option value="highschool"  >highschool</option>
+<option value="graduation">graduation</option>
+<option value="post graduation">post graduation</option>
+<option value="masters">masters</option>
+</select>
+<br/><br/>
+
+<label for="time">Availability</label>
+<label for="Full time"></label>
+<br/>
+<input type="radio" name="full time" id="Full time">
+<br/>
+<label for="part time"></label>
+<input type="radio" name="part time" id="part time">
+
+<label for="comment">Additional Comments</label>
+<br/><br/>
+<textarea name="comment" id="comment" cols="30" rows="4"></textarea>
+
+<input type="button" name="Register" value="submit Application" >
+</form>
+</body>
+</html>

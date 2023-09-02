@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transitions</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            background: red;
+            border: 2px solid black;
+            transition-property: width;
+            transition: width 2s;
+            /* transition property all set karna se sabhi element pa work kra ga jo bhe ham fir hover ma define kra ge , or agar width lika only apply on width not on color property, agar all kar dea to color bhe slowly change hoga 3 second ma */
+            transition-property: all;
+            transition-duration: 3s;
+            transition-delay: 1s;
+            transition-timing-function: ease-in;
+
+            /* shorthand notation for transitions*/
+            transition: all 2s;
+            /* property name | duration | easing function | delay */
+            transition: margin-right 4s ease-in-out 3s;
+
+        }  
+        .box:hover{
+            width: 800px;
+            height: 50px;
+            background-color: #250f94;
+        }
+    </style>
+</head>
+<body>
+    
+<div class="box">
+
+</div>
+
+</body>
+</html>

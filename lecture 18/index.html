@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+
+        /* in % :- 50% width of its parent element div parent elemnet is body which have full 100% width so div have 50% width of body */
+        .box{
+            font-size: 50px;
+            border: 4px solid purple;
+            width: 50%;
+            margin-bottom: 60px;
+        }
+
+        /* example 2nd for % */
+        .parent{
+            border: 1px solid red;
+            background-color: forestgreen;
+        
+        }
+        .child{
+            border: 5px solid orange;
+            background-color: blue;
+            width: 20%;
+            /* child width is 20% of parent width */
+            
+        }
+
+        /* vh - view port ki height 100% use kar ga 
+        view port matalb ak time pa hama jitna page dik raha ha screen par */
+        .continer{
+            border: 2px solid black;
+            background-color: olivedrab;
+            margin-top: 50px;
+            height: 100vh; 
+
+            /* viewport height (vh) the half width viewport width(vw) 50vh */
+            width: 50vw;
+        }
+
+        /* em unit
+        parnet 10px 
+        child - 10em 
+        then child size become 10 X 10px == 100px child */
+    </style>
+
+</head>
+<body>
+    
+    <div class="box">
+        welcome my freinds
+
+    </div>
+    
+    <!-- example 2nd -->
+    
+    <div class="parent">
+
+        <div class="child">
+            i am child 
+        </div>
+
+        </div>
+
+
+        <!-- case 2 for  -->
+
+        <div class="continer">
+
+            hello viewers
+
+        </div>
+</body>
+</html>

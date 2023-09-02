@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        img{
+            margin: 10px;;
+        }
+        div{
+            border: 2px solid black;
+            background-color: bisque;
+            height: 3000px;
+        }
+        /* relative positioning */
+        /* relative current window ka adhar pa hoti ha */
+        /* gap mantain raha ga */
+        .img2{
+            /* position: relative; */
+            top: 100px;
+            /* left: 300px; */ 
+
+            /* absolute positioning */
+            /* old gap remove not maintained  */
+            /* mainly used for over lapping */
+            position: absolute;
+        }
+
+        /* fixed positiong - ma elemnt , tag page scroll kar na pa bhe apni postion pa he raya ga */
+        /* fixed ma entire webpage ka lea fixed raha ga no effect on scrolling behave karta ha */
+        /* must give so where to fix the elemnt */
+            .img4{
+                position: fixed;
+                top: 50px;
+            }
+/* apna paraent container ka ander he striky(fix) behave karta ha */
+/* stricky ka sath postion bhe batanai pada ge eg: top se 100px stick rehana ha  */
+/* realatie to parent */
+            .img3{
+                position: sticky;
+                top: 100px;
+            }
+
+.container{
+    position: relative;
+}
+
+.box{
+    height: 3000px;
+    background-color: brown;
+}
+    </style>
+</head>
+<body>
+     
+    <div class="container">
+
+        <img src="developer.png" alt="developer" width="200px" height="200px" class="img1">
+
+        <img src="hacker.png" alt="developer" width="200px" height="200px" class="img2">
+
+        <img src="home.png" alt="developer" width="200px" height="200px" class="img3">
+
+        <img src="male.png" alt="developer" width="200px" height="200px" class="img4">
+
+    </div>
+    <div class="box">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure velit vitae, fuga vero nobis aut officia tenetur accusamus natus voluptates, consequatur iusto? Perspiciatis, itaque temporibus consectetur minima eius consequatur iste.</p>
+    </div>
+</body>
+</html>

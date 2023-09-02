@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-bosx;
+        }
+        .container{
+            width: 100vw;
+            height: 100vh;
+            background-color: burlywood;
+            border: 5px solid black;
+        }
+        .box{
+            width: 350px;
+            height: 80px;
+            background-color: blueviolet;
+            border-radius: 10px;
+            margin: 10px;
+            border: 3px solid black;
+            animation-name: rightMovement;
+            /* to start animation of this box specify the aniamtion name {animantion right ma move kara ge} */
+            position: relative;
+            /* so that we can use properties of top,bottom, left , right in keyframes */
+
+            animation-duration: 5s;
+            /*  5 seconds*/
+            /* to go from one side to another kitna time lagi animantion */
+
+            animation-iteration-count: 1;
+            /* kitni bar karna chata ho animations */
+
+            animation-delay: 2s;
+            /* animaton start karna se phela kitni dar ruku (2second wait then start) */
+
+            animation-timing-function: linear;
+            
+            /* starting ma kitni speed , ending ma kitni speed , middle ma kitni speed  {can define using this property}*/
+
+            animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1); 
+            /* custom value dana k alea speed kki */
+
+            /* animation-direction: alternate; */
+            /* start to end 
+            then move end to start position */
+
+            animation-fill-mode:both;
+            /* forword matalb 1k bar aga jaka ruk jao */
+            /* start hona se phela , end hona k baad kya karna */
+
+
+/* amination short hand notation */
+
+/* @keyframes duration | easing-function | delay | iteration-count | direction | fill-mode | play-state | name */
+        animation: 5s linear 1s infinite alternate-reverse none running rightMovement;
+
+        }
+        /* keyframes bataya ge animation start se end tak kya kra ge (define animation kara ge kya from start point to end) */
+        @keyframes rightMovement {
+            from{
+                top:0;
+                left:0;
+            }
+            to{
+                top:0;
+                left: 1200px;
+            }
+        }
+
+        .box2{
+            width: 350px;
+            height: 80px;
+            background-color: blueviolet;
+            border-radius: 10px;
+            margin: 10px;
+            border: 3px solid black;
+            animation-name: updown;
+            position: relative;
+            animation: 5s linear 1s infinite alternate-reverse none running updown;
+
+        }
+       @keyframes updown {
+            from{
+                top:400px;
+                left:1350px;
+            }
+            to{
+                 top: 400px;
+                left: 0;
+                
+            }
+        }
+        #circle{
+            width: 200px;
+            height: 200px;
+            background-color: blueviolet;
+            border-radius:200px;
+            margin: 10px;
+            border: 3px solid black;
+            animation-name: circle;
+            position: relative;
+            animation: 10s ease-in-out 0s infinite alternate none running circle;
+
+        }
+        @keyframes circle{
+            /* aniamtion jab apni 0% satage par ho tab ya apply kro */
+           0%{ 
+            top:1%;
+            left: 5%;
+
+           }
+            /* aniamtion jab apni 30% satage par ho tab ya apply kro */
+           30%{
+            top:5%;
+            left: 90%;
+           }
+           60%{
+            top:90%;
+            left: 10%;
+           }
+           100%{
+            top:95%;
+            left: 90%;
+           }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="box">
+<img src="developer.png" alt=""height="200px">
+</div>
+
+<div id="circle">
+
+</div>
+
+<div class="box2">
+
+</div>
+</div>
+
+</body>
+</html>

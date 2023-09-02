@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+
+    .parent{
+        font-size: 100px;
+        padding: 10px; 
+        border: 2px solid black;
+       }
+    .child{
+        /* font-size: 10em; */
+        /* then child size become (10 x parent ka size mean depand on parnet sixe direct multiply with parent size ) 10X10px == 100px  */
+        padding: 10em;
+        /* emphemeral unit (em) */
+
+        /* rem (root-em)
+        jo root elment html ka size difeault 16 px hota ha
+        to 10 ream ka matalb
+        16px X 10 rem == 160 px ho jaya ga  */
+    }
+
+    /*  we mainly use relative unit to create relative design ( phone / latop ma website acha se biehave kra fata na) not absolute units ( fix) */
+</style>
+
+</head>
+<body>
+    
+
+    <p>hok booss</p>
+    <div class="parent">
+
+        <div class="child"> hello jee</div>
+    </div>
+
+</body>
+</html>

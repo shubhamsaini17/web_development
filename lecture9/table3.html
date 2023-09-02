@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form >    
+<h1>Complex Form</h1>
+
+<fieldset>
+    <legend>Personal Information</legend>
+
+    <label for="name">Name</label>
+<input type="text" id="name" placeholder="username">
+
+<label for="email">Email</label>
+<input type="email" id="email" placeholder="123@exmaple.com">
+
+<label for="phone">Phone</label>
+<input type="tel" id="phone" placeholder="phone number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+
+<label for="dob">Date-of-Birth</label>
+<input type="date" name="dob" id="dob">
+
+<p style="display:inline ;">Gender</p>
+
+<input type="radio" name="selectgender" id="male">
+<label for="male">male</label>
+
+<input type="radio" name="selectgender" id="female">
+<label for="female">female</label>
+
+
+<label for="country">Country</label>
+
+<select name="country" id="country">
+    <option>--choose your countary--</option>
+    <option value="us">US</option>
+    <option value="INDIA">INDIA</option>
+    <option value="canada">CANADA</option>
+</select>
+</fieldset>
+<br>
+
+<fieldset>
+    <legend>Address 
+
+        <label for="STREET">STREET</label>
+        <input type="text" id="STREET" >
+        
+        <label for="city">city</label>
+        <input type="text" id="city">
+        
+        <label for="zipcode">Zip code</label>
+        <input type="text" id="zipcode">  
+    </legend>
+
+
+
+
+</fieldset>
+
+<br>
+<fieldset>
+    <legend>Other Information</legend>
+
+    <label for="comment">Comments</label>
+    
+    <textarea name="comment" id="comment" cols="50" rows="10"></textarea>
+    
+    <label for="agree">I agree with tearm and condition</label>
+    <input type="checkbox" name="agree" id="agree">
+    
+
+</fieldset>
+
+<input type="button" name="Register" value="submit" >
+
+</form>
+</body>
+</html>
